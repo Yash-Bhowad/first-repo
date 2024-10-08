@@ -1,0 +1,226 @@
+/* styles.css */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and navigation */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Showcase styles */
+.showcase-background {
+    background: linear-gradient(to bottom right, #4a0e4e, #c41d62, #fb8c00);
+    min-height: calc(100vh - 60px); /* Adjust based on your header height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.showcase-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.showcase-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.showcase-card {
+    background: linear-gradient(to bottom right, #6d0c7a, #d81b60);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-description {
+    margin-bottom: 1rem;
+}
+
+.card-price {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.showcase-button {
+    background-color: white;
+    color: #4a0e4e;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.showcase-button:hover {
+    background-color: #f0f0f0;
+}
+
+.arrow-right {
+    margin-left: 0.5rem;
+}
+
+/* Product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input, select, button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-title {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+}   

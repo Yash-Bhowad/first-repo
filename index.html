@@ -3,92 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone E-Commerce</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>MobileMart - Your One-Stop Mobile Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>                    
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
-    <header class="bg-dark text-white text-center p-3">
-        <h1>Phone E-Commerce Store</h1>
-        <div id="cart" style="text-align: right;">
-            <i class="fas fa-shopping-cart"></i> Cart: <span id="cart-count">0</span> items
-        </div>
+    <header>
+        <nav>
+            <div class="logo">MobileMart</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main class="container mt-4">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">iPhone 13</h5>
-                        <p class="card-text">Price: $799</p>
-                        <button class="btn btn-success add-to-cart">Add to Cart</button>
-                        <button class="remove-from-cart" style="display: none;">Remove</button>
-                    </div>
+    <main class="showcase-background">
+        <div class="showcase-container">
+            <h1 class="showcase-title">The latest. Fresh arrivals to brighten up your mobile experience.</h1>
+            <div class="showcase-grid">
+                <div class="showcase-card festive-offer">
+                    <h2 class="card-subtitle">FESTIVE OFFER</h2>
+                    <h3 class="card-title">Get up to ₹10000.00 instant cashback.</h3>
+                    <p class="card-description">Offer valid on selected bank cards on selected products. Plus up to 12 months of No Cost EMI.</p>
+                    <img src="https://v0.dev/placeholder.svg?height=200&width=200" alt="Festive logo" class="card-image">
+                </div>
+                <div class="showcase-card product-card">
+                    <h2 class="card-title">Latest Smartphone</h2>
+                    <p class="card-description">Built for Intelligence.</p>
+                    <p class="card-price">From ₹79900.00*</p>
+                    <img src="https://v0.dev/placeholder.svg?height=300&width=300" alt="Latest Smartphone" class="card-image">
+                </div>
+                <div class="showcase-card product-card">
+                    <h2 class="card-title">Smart Watch Pro</h2>
+                    <p class="card-description">Your health companion.</p>
+                    <p class="card-price">From ₹39900.00*</p>
+                    <img src="https://v0.dev/placeholder.svg?height=300&width=300" alt="Smart Watch Pro" class="card-image">
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Samsung Galaxy S21</h5>
-                        <p class="card-text">Price: $699</p>
-                        <button class="btn btn-success add-to-cart">Add to Cart</button>
-                        <button class="remove-from-cart" style="display: none;">Remove</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Google Pixel 6</h5>
-                        <p class="card-text">Price: $599</p>
-                        <button class="btn btn-success add-to-cart">Add to Cart</button>
-                        <button class="remove-from-cart" style="display: none;">Remove</button>
-                    </div>
-                </div>
-            </div>
+            <button class="showcase-button">Shop now <span class="arrow-right">→</span></button>
         </div>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2023 MobileMart. All rights reserved.</p>
+    </footer>
 </body>
 </html>
